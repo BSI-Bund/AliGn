@@ -1,0 +1,68 @@
+[COMMON]
+nrTraces = 70000
+randomPlain = True
+randomKey = False
+needPlain = False
+needCipher = False
+needKey = False
+algorithm = AES
+scopeSettings = scopeSettings.lss
+dateStart = 2023-05-25 14:15:56.320307
+dateEnd = 2023-05-25 16:32:56.877167
+status = complete
+version = 0.2
+recordScript = recordTraces_pcsc.py
+comment = AES auf P5 JavaCard, kontaktlos SCM SCL010 an Raspi, Karte überstehend, OHNE Miller-Notchfilter, Trigger nur via 1.GPIO
+
+[PLAINTEXT]
+dtype = uint8
+length = 16
+type = file
+order = row-major [trace, sample]
+datafile = plain.dat
+sha256 = 0e1439a73be122a0729541d8ac7b99cfad21e7ad361fcc3cc58ab5441ced0f86
+fasthash = 2391baa29b010f07a546e97d850070afe7d593d767ea5203b0d7616d41de1112
+
+[CIPHERTEXT]
+dtype = uint8
+length = 16
+type = file
+order = row-major [trace, sample]
+datafile = cipher.dat
+sha256 = 2fed03bd2dadfa8251d8a60f1d711d866dc50665c387e1fdbe8c6fe854b10cac
+fasthash = 0987ed385235c4a087fc3bd67da04c83b4433e1a49c36d1df2ed0fd794262dfa
+
+[EM]
+dtype = int8
+length = 500002
+type = file
+order = row-major [trace, sample]
+datafile = em.dat
+sha256 = 5abad3c8765c107ff40daea7fda54f286aba984fb075eefd164de1a68476e96e
+fasthash = 48ea85dec8d4f1fca12dcbeb9aa3e3d358a07a1692c0c04a9aaab3f925acaf7a
+
+[KEY]
+dtype = uint8
+length = 16
+type = fixed
+data = 139a35422f1d61de3c91787fe0507afd
+
+[EM_SCOPE]
+WAVE_ARRAY_COUNT = 500002
+HORIZ_INTERVAL = 4.0000e-10
+HORIZ_OFFSET = 1.30391998e-02
+HORUNIT = Unit Name = S
+TIMEBASE = 20_us/div
+VERTICAL_GAIN = 6.6419e-04
+VERTICAL_OFFSET = -0.0000e+00
+FIXED_VERT_GAIN = 20_mV/div
+VERTUNIT = Unit Name = V
+WAVE_SOURCE = CHANNEL_3
+NOMINAL_BITS = 8
+COMM_TYPE = byte
+COMM_ORDER = LOFIRST
+RECORD_TYPE = single_sweep
+PROCESSING_DONE = no_processing
+VERT_COUPLING = DC_1MOhm
+COUPLING = D1M
+

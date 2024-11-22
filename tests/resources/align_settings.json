@@ -1,0 +1,10 @@
+{
+  "last_path": "/tmp/",
+  "last_metafile": "",
+  "log_level": null,
+  "trace_plot_width": 1.0,
+  "default_region_around_peak": [
+    -500,
+    500
+  ]
+}

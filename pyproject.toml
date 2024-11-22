@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "AliGn"
+version = "0.4.1"
+description = "A GUI alignment tool for measurement data that comes with different filters and triggers to align traces."
+authors = ["Referat T11 <referat-t11@bsi.bund.de>"]
+license = "EUPLv1.2"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+numba = "^0.59.1"
+numpy = "^1.26.4"
+pyside6 = "^6.7.0"
+mpire = "^2.10.1"
+scipy = "^1.13.0"
+dataconf = "^3.1.0"
+pyqtgraph = "^0.13.7"
+pytest = "^8.2.0"
+pytest-qt = "^4.4.0"
+tqdm = "^4.66.2"
+typing-extensions = "^4.11.0"
+resampy = "^0.4.3"
+
+[tool.poetry.scripts]
+align = "align.gui:start_gui"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

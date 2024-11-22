@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="icons">
+    <file alias="ausgang.png">icons/ausgang_ws.png</file>
+    <file alias="die-info.png">icons/die-info_ws.png</file>
+    <file alias="signal-alt-2.png">icons/signal-alt-2_ws.png</file>
+    <file alias="align_icon.png">icons/align_icon.png</file>
+    <file alias="align_icon.ico">icons/align_icon.ico</file>
+    <file alias="chart.png">icons/chart.png</file>
+    <file alias="quit24.png">icons/quit24.png</file>
+    <file alias="selection_gn.png">icons/selection_gn.png</file>
+  </qresource>
+</RCC>

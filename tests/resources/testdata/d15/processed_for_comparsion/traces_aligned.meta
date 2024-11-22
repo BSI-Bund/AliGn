@@ -1,0 +1,31 @@
+[COMMON]
+nrTraces = 97
+randomPlain = True
+randomKey = False
+algorithm = Unknown
+scopeSettings = None
+dateStart = 2024-10-29 16:59:31.528749
+dateEnd = 2024-10-30 14:19:08.357237
+status = complete
+version = 0.2
+recordScript = generate_traces.py_1
+comment = Source file: /traces.meta
+
+[EM]
+dtype = int8
+length = 356
+type = file
+order = row-major [trace, sample]
+datafile = em_aligned.dat
+sha256 = a3317c6640de451f3246d375a4c5ed1f1cbd862f996426611716fee8dabfba7c
+fasthash = a3317c6640de451f3246d375a4c5ed1f1cbd862f996426611716fee8dabfba7c
+
+[PLAINTEXT]
+dtype = uint8
+length = 16
+type = file
+order = row-major [trace, sample]
+datafile = plain_aligned.dat
+sha256 = 5cea5a0f870130e1245ac3778088a837a8fb0f375153208053bce3378ca853f1
+fasthash = 5cea5a0f870130e1245ac3778088a837a8fb0f375153208053bce3378ca853f1
+
