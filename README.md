@@ -2,17 +2,25 @@
  
 <b>Visual tool to explore, align and process measurement data</b>
 
-With AliGn, measurement data can be visualized, aligned and cropped. The main purpose of this tool is to prepare measurement data for further post-processing. This usually requires well-aligned data in which the signal to be examined (or the starting point of the signal) must lie exactly on top of each other over several traces. The input for AliGn is data that consists of several measurement series and is to be aligned with each other. Various filters are available for this purpose which enable the detection of distinctive points for the alignment of the signal. The aligned and trimmed data can be exported in the original data format.
+AliGn is a tool to visualize, align and crop measurement data that typically occur during side channel analysis.
+
+The main purpose is to prepare measurement data for further post-processing. This usually requires well-aligned data in which the signal to be examined (or the starting point of the signal) must lie exactly on top of each other over several traces. The input for AliGn is data that consists of several measurement series and is to be aligned with each other. Various filters are available that enable the detection of distinctive points for the alignment of the signal. The aligned and trimmed data can be exported in the original data format.
 
 <img src="doc/align_output.gif">
 
 ## Installation
-Download newest relase [here](https://github.com/BSI-Bund/AliGn/releases), run ```pip install <align-x.y.z-py3-none-any.whl>```. Start by running ```align``` (Script that was installed by pip. Maybe you have to add the path of the script pip has installed to the systems PATH).
+
+* download the latest relase [here](https://github.com/BSI-Bund/AliGn/releases)
+* run ```pip install <align-x.y.z-py3-none-any.whl>```
+* execute with ```align```
+* you may need to add the path of the script that pip installed to the systems PATH.
 
 Requires Python 3.9 or newer.
 
 ### Running in Virtual Environment
-Due to the many dependencies, it is recommended to use a virtual environment:
+
+Due to the many dependencies, it is recommended to use a virtual Python environment:
+
 ```
 pip install virtualenv
 python -m venv align_venv
@@ -28,6 +36,7 @@ align
 Use this [Quick Tutorial](demo/howto.md) to generate a test data set and get an idea on how to use AliGn.
 
 ### Filter
+
 Filters can be selected from the drop-down menu and are then displayed in the list of active filters and can then be parameterized. A filter can be removed again by right-clicking on the filter name. 
 Filters are only temporarily applied to the signal. This means that the signal is not saved with any changes when it is exported. The filters are only used to find suitable peaks, thresholds, etc. in order to be reliably recognized by triggers. 
 It's possible to add multiple filters. If more then one filter are active the filters will be processed in the order as the were added.
