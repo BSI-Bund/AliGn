@@ -19,13 +19,11 @@ A trace looks similar to this:
 
 ![Sample Trace](images/trace.png)
 
-It contains of mostly noise. Then there is a small with a small leakage of 
+It contains of mostly noise. Then there is a small part with leakage of 
 of `plaintext[i][j] XOR key[j]` for each `j` from `0...15` . 
-Moreover, the overall signal has a much larger variance at this point.
+Moreover, the overall signal has a much larger variance at this location.
 
 The leakage part heavily jitters among the traces:
-
-todo: include two traces above below, mark with red squares noise, leakage, variance
 
 ## Correlation Attack
 
